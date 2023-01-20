@@ -13,6 +13,9 @@ body {
 .cart {
   display: flex;
   flex-direction: column;
+  gap: 3em;
+  padding: 2em;
+  background-color: #F2F2F2;
 }
 .cart .product {
   display: flex;
@@ -20,11 +23,13 @@ body {
 }
 .cart .product .item-img {
   max-width: 10em;
+  border-radius: 12px;
 }
 .cart .item-info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-grow: 1;
 }
 .cart .item-info .product-metadata .name-price {
   display: flex;
@@ -34,6 +39,11 @@ body {
 .cart .item-info .product-metadata .name-price .price {
   display: flex;
   gap: 1em;
+}
+.cart .item-info .quantity {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 1em;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */

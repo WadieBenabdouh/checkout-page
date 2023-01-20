@@ -12,6 +12,9 @@ body {
 .cart {
     display: flex;
     flex-direction: column;
+    gap: 3em;
+    padding: 2em;
+    background-color: #F2F2F2;
 
     .product {
         display: flex;
@@ -19,6 +22,7 @@ body {
 
         .item-img { //image
             max-width: 10em;
+            border-radius: 12px;
         }
     }
     
@@ -26,6 +30,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        flex-grow: 1; //thanks Kevin Powell
 
         .product-metadata {
             
@@ -39,6 +44,12 @@ body {
                     gap: 1em;
                 }
             }
+        }
+
+        .quantity {
+            display: flex;
+            gap: 1em;
+            margin-bottom: 1em;
         }
     }
 }
