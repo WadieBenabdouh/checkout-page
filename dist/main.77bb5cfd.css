@@ -43,7 +43,18 @@ body {
 .cart .item-info .quantity {
   display: flex;
   gap: 1em;
-  margin-bottom: 1em;
+  border: 1px solid #828282;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 7em;
+}
+.cart .item-info .quantity i {
+  color: #828282;
+  background-color: #E0E0E0;
+  border-radius: 5px;
+  padding: 2px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
