@@ -20,6 +20,7 @@ body {
     gap: 3em;
     padding: 2em;
     background-color: #F2F2F2;
+    
 
     .product {
         display: flex;
@@ -79,6 +80,10 @@ body {
         display: flex;
         flex-direction: column;
         gap: 0.5em;
+
+        hr {
+            color: #BDBDBD;
+        }
 
         .shipping, .total {
             display: flex;

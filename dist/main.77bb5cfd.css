@@ -66,6 +66,9 @@ body {
   flex-direction: column;
   gap: 0.5em;
 }
+.cart .payout hr {
+  color: #BDBDBD;
+}
 .cart .payout .shipping, .cart .payout .total {
   display: flex;
   justify-content: space-between;
