@@ -9,5 +9,37 @@ body {
     padding: 0.5em 1em;
 }
 
+.cart {
+    display: flex;
+    flex-direction: column;
 
+    .product {
+        display: flex;
+        gap: 1em;
+
+        .item-img { //image
+            max-width: 10em;
+        }
+    }
+    
+    .item-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .product-metadata {
+            
+            .name-price {
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+                
+                .price {
+                    display: flex;
+                    gap: 1em;
+                }
+            }
+        }
+    }
+}
 

@@ -10,4 +10,30 @@ body {
   padding: 0.5em 1em;
 }
 
+.cart {
+  display: flex;
+  flex-direction: column;
+}
+.cart .product {
+  display: flex;
+  gap: 1em;
+}
+.cart .product .item-img {
+  max-width: 10em;
+}
+.cart .item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cart .item-info .product-metadata .name-price {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.cart .item-info .product-metadata .name-price .price {
+  display: flex;
+  gap: 1em;
+}
+
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
