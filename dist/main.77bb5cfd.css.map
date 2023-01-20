@@ -1,1 +1,1 @@
-{"version":3,"sources":["scss/main.scss"],"names":[],"mappings":"AAAA","file":"main.77bb5cfd.css","sourceRoot":"..\\src","sourcesContent":[""]}
+{"version":3,"sources":["scss\\main.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;;;AAEJ;EACI;EACA;EACA","file":"main.77bb5cfd.css","sourceRoot":"..\\src","sourcesContent":["*{\r\n    margin:0;\r\n    padding:0;\r\n    box-sizing: border-box;\r\n}\r\nbody {\r\n    display: flex;\r\n    flex-direction: column;\r\n    padding: 0 1em;\r\n}"]}

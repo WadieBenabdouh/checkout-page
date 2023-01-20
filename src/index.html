@@ -6,14 +6,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--  CDN END-->
     <link rel="stylesheet" href="scss/main.scss">
     <title>Checkout Page</title>
 </head>
 
 <body>
-    <h1>Hello World!</h1>
+    <header>
+        <h1>Checkout</h1>
+    </header>
+
+    <div class="cart"> <!--column-->
+        <div class="items-details"> <!--Gray area-->
+
+            <div class="item item-one"> <!--ROW-->
+                <img src="assets/backpack.png" alt="backpack image">
+
+                <div class="product-metadata">
+                    <!-- Name and Price -->
+                    <div class="name-price">
+                        <h3>Vintage Backpack</h3>
+                        <div class="price">
+                            <p>$54.99</p>
+                            <p>$94.00</p>
+                        </div>
+                    </div>
+                    <!-- ITEM COUNT -->
+                    <div class="item-count">
+                        <i class="fa-solid fa-minus"></i>
+                        <p>1</p>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item item-two"> <!--ROW-->
+                <img src="assets/shoes.png" alt="shoes image">
+
+                <div class="product-metadata">
+                    <!-- Name and Price -->
+                    <div class="name-price">
+                        <h3>Levi Shoes</h3>
+                        <div class="price">
+                            <p>$74.99</p>
+                            <p>$124.00</p>
+                        </div>
+                    </div>
+                    <!-- ITEM COUNT -->
+                    <div class="item-count">
+                        <i class="fa-solid fa-minus"></i>
+                        <p>1</p>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
