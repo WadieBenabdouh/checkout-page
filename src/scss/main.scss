@@ -52,6 +52,17 @@ body {
                 .price {
                     display: flex;
                     gap: 1em;
+                    align-items: center;
+                    
+
+                    >:nth-child(1){
+                        color: #F2994A;
+                        font-weight: bold;
+                    }
+
+                    >:nth-child(2){
+                        font-size: 11px;
+                    }
                 }
             }
         }
@@ -71,6 +82,10 @@ body {
                 border-radius: 5px;
                 padding: 2px;
                 cursor: pointer;
+            }
+
+            p{
+                font-weight: bold;
             }
         }
     }

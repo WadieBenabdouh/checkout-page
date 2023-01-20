@@ -44,6 +44,14 @@ body {
 .cart .item-info .product-metadata .name-price .price {
   display: flex;
   gap: 1em;
+  align-items: center;
+}
+.cart .item-info .product-metadata .name-price .price > :nth-child(1) {
+  color: #F2994A;
+  font-weight: bold;
+}
+.cart .item-info .product-metadata .name-price .price > :nth-child(2) {
+  font-size: 11px;
 }
 .cart .item-info .quantity {
   display: flex;
@@ -60,6 +68,9 @@ body {
   border-radius: 5px;
   padding: 2px;
   cursor: pointer;
+}
+.cart .item-info .quantity p {
+  font-weight: bold;
 }
 .cart .payout {
   display: flex;
