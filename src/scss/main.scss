@@ -1,7 +1,12 @@
+//FONT FAMILY
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 *{
+
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 body {
     display: flex;
@@ -21,7 +26,7 @@ body {
         gap: 1em;
 
         .item-img { //image
-            max-width: 10em;
+            max-width: 8em;
             border-radius: 12px;
         }
     }
@@ -38,6 +43,10 @@ body {
                 display: flex;
                 flex-direction: column;
                 gap: 1em;
+
+                h4 {
+                    white-space: nowrap;
+                }
                 
                 .price {
                     display: flex;
@@ -62,6 +71,19 @@ body {
                 padding: 2px;
                 cursor: pointer;
             }
+        }
+    }
+
+    //PAYOUT
+    .payout {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+
+        .shipping, .total {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
     }
 }

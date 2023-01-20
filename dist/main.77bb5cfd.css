@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -22,7 +24,7 @@ body {
   gap: 1em;
 }
 .cart .product .item-img {
-  max-width: 10em;
+  max-width: 8em;
   border-radius: 12px;
 }
 .cart .item-info {
@@ -35,6 +37,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1em;
+}
+.cart .item-info .product-metadata .name-price h4 {
+  white-space: nowrap;
 }
 .cart .item-info .product-metadata .name-price .price {
   display: flex;
@@ -55,6 +60,16 @@ body {
   border-radius: 5px;
   padding: 2px;
   cursor: pointer;
+}
+.cart .payout {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.cart .payout .shipping, .cart .payout .total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
