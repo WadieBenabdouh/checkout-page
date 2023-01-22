@@ -148,8 +148,6 @@ form {
                     width: 100%;
 
                     input {
-                        // width: 100%;
-                        // outline: #f55207 solid 1px;
                         width: 100%;
                         border: none;
                     }
@@ -164,7 +162,7 @@ form {
         gap: 1em;
         // outline: red solid 1px;
 
-        .name{
+        .name {
             display: flex;
             flex-direction: column;
             gap: 0.5em;
@@ -181,14 +179,11 @@ form {
                     width: 100%;
 
                     input {
-                        // width: 100%;
-                        // outline: #f55207 solid 1px;
                         width: 100%;
                         border: none;
                     }
                 }
             }
-        }   
-
+        }
     }
 }
