@@ -11,7 +11,8 @@
 body {
     display: flex;
     flex-direction: column;
-    padding: 0.5em 1em;
+    padding: 1.5em 1em;
+    gap: 1em;
 }
 
 .cart {
@@ -20,6 +21,7 @@ body {
     gap: 3em;
     padding: 2em;
     background-color: #F2F2F2;
+    border-radius: 12px;
     
 
     .product {
@@ -104,7 +106,11 @@ body {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            color: #333333;
+
+            p {
+                font-weight: 600;
+            }
         }
     }
 }
-
