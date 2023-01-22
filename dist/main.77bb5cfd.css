@@ -97,7 +97,7 @@ body {
 form {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 2em;
 }
 form .contact {
   display: flex;
@@ -139,12 +139,12 @@ form .shipping-form {
   flex-direction: column;
   gap: 1em;
 }
-form .shipping-form .name {
+form .shipping-form .name, form .shipping-form .address, form .shipping-form .city {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
 }
-form .shipping-form .name .name-field {
+form .shipping-form .name .name-field, form .shipping-form .name .address-field, form .shipping-form .name .city-field, form .shipping-form .address .name-field, form .shipping-form .address .address-field, form .shipping-form .address .city-field, form .shipping-form .city .name-field, form .shipping-form .city .address-field, form .shipping-form .city .city-field {
   display: flex;
   align-items: center;
   gap: 1em;
@@ -152,10 +152,10 @@ form .shipping-form .name .name-field {
   border-radius: 12px;
   padding: 10px;
 }
-form .shipping-form .name .name-field label {
+form .shipping-form .name .name-field label, form .shipping-form .name .address-field label, form .shipping-form .name .city-field label, form .shipping-form .address .name-field label, form .shipping-form .address .address-field label, form .shipping-form .address .city-field label, form .shipping-form .city .name-field label, form .shipping-form .city .address-field label, form .shipping-form .city .city-field label {
   width: 100%;
 }
-form .shipping-form .name .name-field label input {
+form .shipping-form .name .name-field label input, form .shipping-form .name .address-field label input, form .shipping-form .name .city-field label input, form .shipping-form .address .name-field label input, form .shipping-form .address .address-field label input, form .shipping-form .address .city-field label input, form .shipping-form .city .name-field label input, form .shipping-form .city .address-field label input, form .shipping-form .city .city-field label input {
   width: 100%;
   border: none;
 }

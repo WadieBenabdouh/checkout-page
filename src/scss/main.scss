@@ -121,7 +121,7 @@ body {
 form {
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 2em;
 
     .contact {
         display: flex;
@@ -162,12 +162,12 @@ form {
         gap: 1em;
         // outline: red solid 1px;
 
-        .name {
+        .name, .address, .city {
             display: flex;
             flex-direction: column;
             gap: 0.5em;
 
-            .name-field {
+            .name-field, .address-field, .city-field {
                 display: flex;
                 align-items: center;
                 gap: 1em;
