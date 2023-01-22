@@ -82,14 +82,47 @@ body {
 .cart .payout hr {
   color: #BDBDBD;
 }
-.cart .payout .shipping, .cart .payout .total {
+.cart .payout .shipping,
+.cart .payout .total {
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #333333;
 }
-.cart .payout .shipping p, .cart .payout .total p {
+.cart .payout .shipping p,
+.cart .payout .total p {
   font-weight: 600;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+form .contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+form .contact .email, form .contact .phone {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+form .contact .email .email-field, form .contact .email .phone-field, form .contact .phone .email-field, form .contact .phone .phone-field {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  border: 1px solid #828282;
+  border-radius: 12px;
+  padding: 10px;
+}
+form .contact .email .email-field label, form .contact .email .phone-field label, form .contact .phone .email-field label, form .contact .phone .phone-field label {
+  width: 100%;
+}
+form .contact .email .email-field label input, form .contact .email .phone-field label input, form .contact .phone .email-field label input, form .contact .phone .phone-field label input {
+  width: 100%;
+  border: none;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */

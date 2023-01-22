@@ -1,13 +1,14 @@
 //FONT FAMILY
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-*{
+* {
 
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+
 body {
     display: flex;
     flex-direction: column;
@@ -22,18 +23,19 @@ body {
     padding: 2em;
     background-color: #F2F2F2;
     border-radius: 12px;
-    
+
 
     .product {
         display: flex;
         gap: 1em;
 
-        .item-img { //image
+        .item-img {
+            //image
             max-width: 8em;
             border-radius: 12px;
         }
     }
-    
+
     .item-info {
         display: flex;
         flex-direction: column;
@@ -41,7 +43,7 @@ body {
         flex-grow: 1; //thanks Kevin Powell
 
         .product-metadata {
-            
+
             .name-price {
                 display: flex;
                 flex-direction: column;
@@ -50,19 +52,19 @@ body {
                 h4 {
                     white-space: nowrap;
                 }
-                
+
                 .price {
                     display: flex;
                     gap: 1em;
                     align-items: center;
-                    
 
-                    >:nth-child(1){
+
+                    >:nth-child(1) {
                         color: #F2994A;
                         font-weight: bold;
                     }
 
-                    >:nth-child(2){
+                    >:nth-child(2) {
                         font-size: 11px;
                     }
                 }
@@ -86,7 +88,7 @@ body {
                 cursor: pointer;
             }
 
-            p{
+            p {
                 font-weight: bold;
             }
         }
@@ -102,7 +104,8 @@ body {
             color: #BDBDBD;
         }
 
-        .shipping, .total {
+        .shipping,
+        .total {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -110,6 +113,44 @@ body {
 
             p {
                 font-weight: 600;
+            }
+        }
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        // outline: 1px solid green;
+
+        .email, .phone {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+
+            .email-field, .phone-field {
+                display: flex;
+                align-items: center;
+                gap: 1em;
+                border: 1px solid #828282;
+                border-radius: 12px;
+                padding: 10px;
+
+                label {
+                    width: 100%;
+                    input{
+                        // width: 100%;
+                        // outline: #f55207 solid 1px;
+                        width: 100%;
+                        border: none;
+                    }
+                }
             }
         }
     }
