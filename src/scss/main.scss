@@ -185,5 +185,37 @@ form {
                 }
             }
         }
+
+        .country-postal-wrapper {
+            display: flex;
+            flex-grow: 1;
+
+            .country {
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+                justify-content: center;
+
+                .country-field {
+                     display: flex;
+                     align-items: center;
+                     gap: 1em;
+                }
+            }
+
+            .postal {
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+                justify-content: center;
+                // align-items: center;
+
+                .postal-field {
+                    display: flex;
+                    align-items: center;
+                    gap: 1em;
+                }
+            }
+        }
     }
 }

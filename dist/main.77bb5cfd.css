@@ -159,5 +159,31 @@ form .shipping-form .name .name-field label input, form .shipping-form .name .ad
   width: 100%;
   border: none;
 }
+form .shipping-form .country-postal-wrapper {
+  display: flex;
+  flex-grow: 1;
+}
+form .shipping-form .country-postal-wrapper .country {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+}
+form .shipping-form .country-postal-wrapper .country .country-field {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+form .shipping-form .country-postal-wrapper .postal {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+}
+form .shipping-form .country-postal-wrapper .postal .postal-field {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */

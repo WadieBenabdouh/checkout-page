@@ -147,27 +147,42 @@
                 </div>
             </div>
 
-            <!-- Country - Postal Code -->
+            <!-- COUNTRY - POSTAL -->
+            <div class="country-postal-wrapper">
+
+                <!-- Country -->
             <div class="country">
                 <h5>Country</h5>
 
                 <div class="country-field">
                     <i class="fa-sharp fa-solid fa-flag"></i>
-                    <label for="text">Your country
+                    <h6 style="white-space: nowrap;">Your country</h6>
                         <select name="country" id="country">
-                            <option disabled="" value="">Pick</option>
-                            <option value="1">Morocco</option>
-                            <option value="2">Brasiz</option>
-                            <option value="1">Russia</option>
-                            <option value="1">Belarus</option>
-                            <option value="1">Romania</option>
-                            <option value="2">Moldova</option>
-                            <option value="1">Czech Republic</option>
-                            <option value="1">Switzerland</option>
+                            <option value="" disabled="" selected="selected">Choose a country</option>
+                            <option value="1">Brasil</option>
+                            <option value="2">Russia</option>
+                            <option value="3">Belarus</option>
+                            <option value="4">Czech Republic</option>
+                            <option value="5">Switzerland</option>
+                            <option value="6">Morocco</option>
                         </select>
+                    
+                </div>
+            </div>
+
+            <!-- Postal Code -->
+            <div class="postal">
+                <h5>Postal Code</h5>
+
+                <div class="postal-field">
+                    <i class="fa-solid fa-signs-post"></i>
+                    <label for="text">
+                        <input type="text" id="text" placeholder="Your postal code">
                     </label>
                 </div>
             </div>
+            </div>
+            
         </div>
 
     </form>
