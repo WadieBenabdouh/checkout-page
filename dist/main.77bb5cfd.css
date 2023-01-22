@@ -179,6 +179,9 @@ form .shipping-form .country-postal-wrapper .country .country-field {
   border-radius: 12px;
   padding: 10px;
 }
+form .shipping-form .country-postal-wrapper .country .country-field select {
+  width: 1.5em;
+}
 form .shipping-form .country-postal-wrapper .postal {
   display: flex;
   flex-direction: column;
