@@ -162,12 +162,16 @@ form {
         gap: 1em;
         // outline: red solid 1px;
 
-        .name, .address, .city {
+        .name,
+        .address,
+        .city {
             display: flex;
             flex-direction: column;
             gap: 0.5em;
 
-            .name-field, .address-field, .city-field {
+            .name-field,
+            .address-field,
+            .city-field {
                 display: flex;
                 align-items: center;
                 gap: 1em;
@@ -201,16 +205,16 @@ form {
                 width: 50%;
 
                 .country-field {
-                     display: flex;
-                     align-items: center;
-                     gap: 1em;
-                     border: 1px solid #828282;
-                     border-radius: 12px;
-                     padding: 10px;
+                    display: flex;
+                    align-items: center;
+                    gap: 1em;
+                    border: 1px solid #828282;
+                    border-radius: 12px;
+                    padding: 10px;
 
-                     select {
+                    select {
                         width: 1.5em; //WOW IMPRESSIVE WAY TO SHOW ONLY THE ARROW!! SELF MADE TOO WELL DONE
-                     }
+                    }
 
                 }
             }
