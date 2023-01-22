@@ -104,12 +104,16 @@ form .contact {
   flex-direction: column;
   gap: 1em;
 }
-form .contact .email, form .contact .phone {
+form .contact .email,
+form .contact .phone {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
 }
-form .contact .email .email-field, form .contact .email .phone-field, form .contact .phone .email-field, form .contact .phone .phone-field {
+form .contact .email .email-field,
+form .contact .email .phone-field,
+form .contact .phone .email-field,
+form .contact .phone .phone-field {
   display: flex;
   align-items: center;
   gap: 1em;
@@ -117,10 +121,41 @@ form .contact .email .email-field, form .contact .email .phone-field, form .cont
   border-radius: 12px;
   padding: 10px;
 }
-form .contact .email .email-field label, form .contact .email .phone-field label, form .contact .phone .email-field label, form .contact .phone .phone-field label {
+form .contact .email .email-field label,
+form .contact .email .phone-field label,
+form .contact .phone .email-field label,
+form .contact .phone .phone-field label {
   width: 100%;
 }
-form .contact .email .email-field label input, form .contact .email .phone-field label input, form .contact .phone .email-field label input, form .contact .phone .phone-field label input {
+form .contact .email .email-field label input,
+form .contact .email .phone-field label input,
+form .contact .phone .email-field label input,
+form .contact .phone .phone-field label input {
+  width: 100%;
+  border: none;
+}
+form .shipping-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+form .shipping-form .name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+form .shipping-form .name .name-field {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  border: 1px solid #828282;
+  border-radius: 12px;
+  padding: 10px;
+}
+form .shipping-form .name .name-field label {
+  width: 100%;
+}
+form .shipping-form .name .name-field label input {
   width: 100%;
   border: none;
 }
