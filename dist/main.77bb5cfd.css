@@ -227,5 +227,24 @@ form .shipping-form .country-postal-wrapper .postal .postal-field label input {
   width: 10em;
   border: none;
 }
+form .shipping-form .final {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+form .shipping-form .final .save {
+  display: flex;
+  gap: 0.5em;
+}
+form .shipping-form .final .submit-wrapper {
+  align-self: flex-end;
+}
+form .shipping-form .final .submit-wrapper input {
+  background: #F2994A;
+  border-radius: 12px;
+  padding: 1em 3em;
+  color: #fff;
+}
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
