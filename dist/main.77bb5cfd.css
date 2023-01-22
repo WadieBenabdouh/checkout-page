@@ -174,7 +174,7 @@ form .shipping-form .country-postal-wrapper .country {
 form .shipping-form .country-postal-wrapper .country .country-field {
   display: flex;
   align-items: center;
-  gap: 0.5em;
+  gap: 1em;
   border: 1px solid #828282;
   border-radius: 12px;
   padding: 10px;
@@ -196,6 +196,10 @@ form .shipping-form .country-postal-wrapper .postal .postal-field {
   border: 1px solid #828282;
   border-radius: 12px;
   padding: 10px;
+}
+form .shipping-form .country-postal-wrapper .postal .postal-field label input {
+  width: 10em;
+  border: none;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */

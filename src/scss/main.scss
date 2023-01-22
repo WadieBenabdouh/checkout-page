@@ -203,7 +203,7 @@ form {
                 .country-field {
                      display: flex;
                      align-items: center;
-                     gap: 0.5em;
+                     gap: 1em;
                      border: 1px solid #828282;
                      border-radius: 12px;
                      padding: 10px;
@@ -230,6 +230,13 @@ form {
                     border: 1px solid #828282;
                     border-radius: 12px;
                     padding: 10px;
+
+                    label {
+                        input {
+                            width: 10em;
+                            border: none;
+                        }
+                    }
                 }
             }
         }
