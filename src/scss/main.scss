@@ -186,20 +186,28 @@ form {
             }
         }
 
+        // country postal
+
         .country-postal-wrapper {
             display: flex;
-            flex-grow: 1;
+            gap: 0.5em;
+            justify-content: center; //m3leeem
 
             .country {
                 display: flex;
                 flex-direction: column;
                 gap: 1em;
                 justify-content: center;
+                width: 50%;
 
                 .country-field {
                      display: flex;
                      align-items: center;
-                     gap: 1em;
+                     gap: 0.5em;
+                     border: 1px solid #828282;
+                     border-radius: 12px;
+                     padding: 10px;
+
                 }
             }
 
@@ -208,12 +216,16 @@ form {
                 flex-direction: column;
                 gap: 1em;
                 justify-content: center;
+                width: 50%;
                 // align-items: center;
 
                 .postal-field {
                     display: flex;
                     align-items: center;
-                    gap: 1em;
+                    gap: 0.5em;
+                    border: 1px solid #828282;
+                    border-radius: 12px;
+                    padding: 10px;
                 }
             }
         }
