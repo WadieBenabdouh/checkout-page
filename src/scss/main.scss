@@ -275,3 +275,24 @@ form {
     }
 
 }
+
+//----------BIG SCREENS----------//
+
+@media screen and (min-width: 960px) and (max-width: 1440px){
+    body{
+        display: grid;
+        grid-template-columns: 1.3fr 1fr; //wowwwwwww
+        padding: 2em 8em;
+        column-gap: 2em;
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .cart {
+            order: 2; //WOW 
+            height: fit-content;
+        }
+    }
+}

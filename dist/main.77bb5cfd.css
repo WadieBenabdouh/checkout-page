@@ -252,4 +252,21 @@ form .shipping-form .final .submit-wrapper input {
   color: #fff;
 }
 
+@media screen and (min-width: 960px) and (max-width: 1440px) {
+  body {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    padding: 2em 8em;
+    column-gap: 2em;
+  }
+  body header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  body .cart {
+    order: 2;
+    height: fit-content;
+  }
+}
+
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
