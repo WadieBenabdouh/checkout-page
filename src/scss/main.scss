@@ -52,10 +52,11 @@ body {
                 h4 {
                     white-space: nowrap;
                 }
+
                 @media screen and (max-width: 362px) {
                     h4 {
                         white-space: pre-wrap;
-                    }                
+                    }
                 }
 
                 .price {
@@ -157,7 +158,8 @@ form {
                         width: 100%;
                         border: none;
                     }
-                    input:focus{
+
+                    input:focus {
                         accent-color: #fff;
                     }
                 }
@@ -195,7 +197,8 @@ form {
                         width: 100%;
                         border: none;
                     }
-                    input:focus{
+
+                    input:focus {
                         accent-color: #fff;
                     }
                 }
@@ -251,7 +254,8 @@ form {
                             width: 10em;
                             border: none;
                         }
-                        input:focus{
+
+                        input:focus {
                             accent-color: #fff;
                         }
                     }
@@ -270,7 +274,7 @@ form {
                 gap: .5em;
 
                 label {
-                    input{
+                    input {
                         accent-color: #F2994A;
                     }
                 }
@@ -285,7 +289,7 @@ form {
                     padding: 1em 3em;
                     color: #fff;
                 }
-                
+
             }
         }
 
@@ -295,8 +299,8 @@ form {
 
 //----------BIG SCREENS----------//
 
-@media screen and (min-width: 870px) and (max-width: 1440px){
-    body{
+@media screen and (min-width: 870px) and (max-width: 1440px) {
+    body {
         display: grid;
         grid-template-columns: 1.3fr 1fr; //wowwwwwww
         padding: 2em 8em;
