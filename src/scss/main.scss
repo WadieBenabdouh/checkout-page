@@ -52,6 +52,11 @@ body {
                 h4 {
                     white-space: nowrap;
                 }
+                @media screen and (max-width: 362px) {
+                    h4 {
+                        white-space: pre-wrap;
+                    }                
+                }
 
                 .price {
                     display: flex;

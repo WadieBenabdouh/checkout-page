@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em 1em;
+  gap: 1em;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  padding: 2em;
+  background-color: #F2F2F2;
+  border-radius: 12px;
+}
+.cart .product {
+  display: flex;
+  gap: 1em;
+}
+.cart .product .item-img {
+  max-width: 8em;
+  border-radius: 12px;
+}
+.cart .item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.cart .item-info .product-metadata .name-price {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.cart .item-info .product-metadata .name-price h4 {
+  white-space: nowrap;
+}
+@media screen and (max-width: 362px) {
+  .cart .item-info .product-metadata .name-price h4 {
+    white-space: pre-wrap;
+  }
+}
+.cart .item-info .product-metadata .name-price .price {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+.cart .item-info .product-metadata .name-price .price > :nth-child(1) {
+  color: #F2994A;
+  font-weight: bold;
+}
+.cart .item-info .product-metadata .name-price .price > :nth-child(2) {
+  font-size: 11px;
+}
+.cart .item-info .quantity {
+  display: flex;
+  gap: 1em;
+  border: 1px solid #828282;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 7em;
+}
+.cart .item-info .quantity i {
+  color: #828282;
+  background-color: #E0E0E0;
+  border-radius: 5px;
+  padding: 2px;
+  cursor: pointer;
+}
+.cart .item-info .quantity p {
+  font-weight: bold;
+}
+.cart .payout {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.cart .payout hr {
+  color: #BDBDBD;
+}
+.cart .payout .shipping,
+.cart .payout .total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #333333;
+}
+.cart .payout .shipping p,
+.cart .payout .total p {
+  font-weight: 600;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+form .contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+form .contact .email,
+form .contact .phone {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+form .contact .email .email-field,
+form .contact .email .phone-field,
+form .contact .phone .email-field,
+form .contact .phone .phone-field {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  border: 1px solid #828282;
+  border-radius: 12px;
+  padding: 10px;
+}
+form .contact .email .email-field label,
+form .contact .email .phone-field label,
+form .contact .phone .email-field label,
+form .contact .phone .phone-field label {
+  width: 100%;
+}
+form .contact .email .email-field label input,
+form .contact .email .phone-field label input,
+form .contact .phone .email-field label input,
+form .contact .phone .phone-field label input {
+  width: 100%;
+  border: none;
+}
+form .shipping-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+form .shipping-form .name,
+form .shipping-form .address,
+form .shipping-form .city {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+form .shipping-form .name .name-field,
+form .shipping-form .name .address-field,
+form .shipping-form .name .city-field,
+form .shipping-form .address .name-field,
+form .shipping-form .address .address-field,
+form .shipping-form .address .city-field,
+form .shipping-form .city .name-field,
+form .shipping-form .city .address-field,
+form .shipping-form .city .city-field {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  border: 1px solid #828282;
+  border-radius: 12px;
+  padding: 10px;
+}
+form .shipping-form .name .name-field label,
+form .shipping-form .name .address-field label,
+form .shipping-form .name .city-field label,
+form .shipping-form .address .name-field label,
+form .shipping-form .address .address-field label,
+form .shipping-form .address .city-field label,
+form .shipping-form .city .name-field label,
+form .shipping-form .city .address-field label,
+form .shipping-form .city .city-field label {
+  width: 100%;
+}
+form .shipping-form .name .name-field label input,
+form .shipping-form .name .address-field label input,
+form .shipping-form .name .city-field label input,
+form .shipping-form .address .name-field label input,
+form .shipping-form .address .address-field label input,
+form .shipping-form .address .city-field label input,
+form .shipping-form .city .name-field label input,
+form .shipping-form .city .address-field label input,
+form .shipping-form .city .city-field label input {
+  width: 100%;
+  border: none;
+}
+form .shipping-form .country-postal-wrapper {
+  display: flex;
+  gap: 0.5em;
+  justify-content: center;
+}
+form .shipping-form .country-postal-wrapper .country {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  width: 50%;
+}
+form .shipping-form .country-postal-wrapper .country .country-field {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  border: 1px solid #828282;
+  border-radius: 12px;
+  padding: 10px;
+}
+form .shipping-form .country-postal-wrapper .country .country-field select {
+  width: 1.5em;
+}
+form .shipping-form .country-postal-wrapper .postal {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  width: 50%;
+}
+form .shipping-form .country-postal-wrapper .postal .postal-field {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  border: 1px solid #828282;
+  border-radius: 12px;
+  padding: 10px;
+}
+form .shipping-form .country-postal-wrapper .postal .postal-field label input {
+  width: 10em;
+  border: none;
+}
+form .shipping-form .final {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+form .shipping-form .final .save {
+  display: flex;
+  gap: 0.5em;
+}
+form .shipping-form .final .submit-wrapper {
+  align-self: flex-end;
+}
+form .shipping-form .final .submit-wrapper input {
+  background: #F2994A;
+  border-radius: 12px;
+  padding: 1em 3em;
+  color: #fff;
+}
+
+/*# sourceMappingURL=/main.77bb5cfd.css.map */
