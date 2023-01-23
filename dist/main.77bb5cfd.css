@@ -139,6 +139,12 @@ form .contact .phone .phone-field label input {
   width: 100%;
   border: none;
 }
+form .contact .email .email-field label input:focus,
+form .contact .email .phone-field label input:focus,
+form .contact .phone .email-field label input:focus,
+form .contact .phone .phone-field label input:focus {
+  accent-color: #fff;
+}
 form .shipping-form {
   display: flex;
   flex-direction: column;
@@ -190,6 +196,17 @@ form .shipping-form .city .city-field label input {
   width: 100%;
   border: none;
 }
+form .shipping-form .name .name-field label input:focus,
+form .shipping-form .name .address-field label input:focus,
+form .shipping-form .name .city-field label input:focus,
+form .shipping-form .address .name-field label input:focus,
+form .shipping-form .address .address-field label input:focus,
+form .shipping-form .address .city-field label input:focus,
+form .shipping-form .city .name-field label input:focus,
+form .shipping-form .city .address-field label input:focus,
+form .shipping-form .city .city-field label input:focus {
+  accent-color: #fff;
+}
 form .shipping-form .country-postal-wrapper {
   display: flex;
   gap: 0.5em;
@@ -232,6 +249,9 @@ form .shipping-form .country-postal-wrapper .postal .postal-field label input {
   width: 10em;
   border: none;
 }
+form .shipping-form .country-postal-wrapper .postal .postal-field label input:focus {
+  accent-color: #fff;
+}
 form .shipping-form .final {
   margin-top: 1em;
   display: flex;
@@ -241,6 +261,9 @@ form .shipping-form .final {
 form .shipping-form .final .save {
   display: flex;
   gap: 0.5em;
+}
+form .shipping-form .final .save label input {
+  accent-color: #F2994A;
 }
 form .shipping-form .final .submit-wrapper {
   align-self: flex-end;
