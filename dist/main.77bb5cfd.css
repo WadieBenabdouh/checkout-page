@@ -275,12 +275,13 @@ form .shipping-form .final .submit-wrapper input {
   color: #fff;
 }
 
-@media screen and (min-width: 960px) and (max-width: 1440px) {
+@media screen and (min-width: 870px) and (max-width: 1440px) {
   body {
     display: grid;
     grid-template-columns: 1.3fr 1fr;
     padding: 2em 8em;
     column-gap: 2em;
+    place-content: center;
   }
   body header {
     grid-column-start: 1;
