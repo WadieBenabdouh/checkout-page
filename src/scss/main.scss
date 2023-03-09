@@ -87,11 +87,17 @@ body {
             max-width: 7em;
 
             i {
-                color: #828282;
+                color: #313131;
                 background-color: #E0E0E0;
                 border-radius: 5px;
                 padding: 2px;
                 cursor: pointer;
+            }
+
+            i:hover {
+                color: #f8841e;
+                background-color: #1d1d1b;
+                transition: all .3s ease;
             }
 
             p {
@@ -275,7 +281,7 @@ form {
 
                 label {
                     input {
-                        accent-color: #F2994A;
+                        accent-color: #f8841e;
                     }
                 }
             }
@@ -284,10 +290,12 @@ form {
                 align-self: flex-end;
 
                 input {
-                    background: #F2994A;
+                    background: #f8841e;
                     border-radius: 12px;
                     padding: 1em 3em;
-                    color: #fff;
+                    color: #000;
+                    font-weight: bold;
+                    cursor: pointer;
                 }
 
             }
