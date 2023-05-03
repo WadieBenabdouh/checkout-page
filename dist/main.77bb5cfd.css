@@ -227,6 +227,7 @@ form .shipping-form .country-postal-wrapper .country {
 form .shipping-form .country-postal-wrapper .country .country-field {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   gap: 1em;
   border: 1px solid #828282;
   border-radius: 12px;
