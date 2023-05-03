@@ -161,16 +161,16 @@ function updateProductQuantity(productId, delta) {
     product1Quantity += delta;
     if (product1Quantity < 0) {
       product1Quantity = 0;
-    } else if (product1Quantity > 10) {
-      product1Quantity = 10;
+    } else if (product1Quantity > 50) {
+      product1Quantity = 50;
     }
     product1QuantityElement.textContent = product1Quantity;
   } else if (productId === "product2") {
     product2Quantity += delta;
     if (product2Quantity < 0) {
       product2Quantity = 0;
-    } else if (product2Quantity > 10) {
-      product2Quantity = 10;
+    } else if (product2Quantity > 50) {
+      product2Quantity = 50;
     }
     product2QuantityElement.textContent = product2Quantity;
   }
