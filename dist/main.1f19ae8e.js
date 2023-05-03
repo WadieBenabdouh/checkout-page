@@ -119,10 +119,10 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"main.js":[function(require,module,exports) {
 // FIRST ITEM
-var count = 1;
+var count = 0;
 document.getElementById("decreaseBtn1").onclick = function () {
   // count -= 1;
-  if (count > 1) count--;
+  if (count >= 1) count--;
   // count = (count < 10) ? + count : count;
   document.getElementById("countoneLabel").innerHTML = count;
 };
@@ -133,10 +133,10 @@ document.getElementById("increaseBtn1").onclick = function () {
 
 //// SECOND ITEM ////
 
-var countTwo = 1;
+var countTwo = 0;
 document.getElementById("decreaseBtn2").onclick = function () {
   // countTwo -= 1;
-  if (countTwo > 1) countTwo--;
+  if (countTwo >= 1) countTwo--;
   // count = (count < 10) ? + count : count;
   document.getElementById("counttwoLabel").innerHTML = countTwo;
 };
