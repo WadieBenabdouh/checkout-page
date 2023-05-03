@@ -185,10 +185,10 @@ document.getElementById("increaseBtn1").addEventListener("click", function () {
   return updateProductQuantity("product1", 1);
 });
 document.getElementById("decreaseBtn2").addEventListener("click", function () {
-  return updateProductQuantity("product1", -1);
+  return updateProductQuantity("product2", -1);
 });
 document.getElementById("increaseBtn2").addEventListener("click", function () {
-  return updateProductQuantity("product1", 1);
+  return updateProductQuantity("product2", 1);
 });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];

@@ -70,5 +70,5 @@ function updateProductQuantity(productId, delta) {
 document.getElementById("decreaseBtn1").addEventListener("click", () => updateProductQuantity("product1", -1));
 document.getElementById("increaseBtn1").addEventListener("click", () => updateProductQuantity("product1", 1));
 
-document.getElementById("decreaseBtn2").addEventListener("click", () => updateProductQuantity("product1", -1));
-document.getElementById("increaseBtn2").addEventListener("click", () => updateProductQuantity("product1", 1));
+document.getElementById("decreaseBtn2").addEventListener("click", () => updateProductQuantity("product2", -1));
+document.getElementById("increaseBtn2").addEventListener("click", () => updateProductQuantity("product2", 1));
