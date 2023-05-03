@@ -132,7 +132,6 @@ document.getElementById("increaseBtn1").onclick = function () {
 };
 
 //// SECOND ITEM ////
-
 var countTwo = 0;
 document.getElementById("decreaseBtn2").onclick = function () {
   // countTwo -= 1;
@@ -144,6 +143,53 @@ document.getElementById("increaseBtn2").onclick = function () {
   countTwo += 1;
   document.getElementById("counttwoLabel").innerHTML = countTwo;
 };
+
+// PRICING MATH
+var product1Price = 24.00;
+var product2Price = 34.00;
+var product1QuantityElement = document.querySelectorAll("countoneLabel");
+var product2QuantityElement = document.querySelectorAll("counttwoLabel");
+var totalPriceElement = document.getElementById("totalPrice");
+var product1Quantity = 0;
+var product2Quantity = 0;
+function updateTotalPrice() {
+  var totalPrice = product1Price * product1Quantity + product2Price * product2Quantity;
+  totalPriceElement.textContent = " $".concat(totalPrice.toFixed(2));
+}
+function updateProductQuantity(productId, delta) {
+  if (productId === "product1") {
+    product1Quantity += delta;
+    if (product1Quantity < 0) {
+      product1Quantity = 0;
+    } else if (product1Quantity > 10) {
+      product1Quantity = 10;
+    }
+    product1QuantityElement.textContent = product1Quantity;
+  } else if (productId === "product2") {
+    product2Quantity += delta;
+    if (product2Quantity < 0) {
+      product2Quantity = 0;
+    } else if (product2Quantity > 10) {
+      product2Quantity = 10;
+    }
+    product2QuantityElement.textContent = product2Quantity;
+  }
+  updateTotalPrice();
+}
+
+// Update the product quantity and total price whenever a quantity icon is clicked
+document.getElementById("decreaseBtn1").addEventListener("click", function () {
+  return updateProductQuantity("product1", -1);
+});
+document.getElementById("increaseBtn1").addEventListener("click", function () {
+  return updateProductQuantity("product1", 1);
+});
+document.getElementById("decreaseBtn2").addEventListener("click", function () {
+  return updateProductQuantity("product1", -1);
+});
+document.getElementById("increaseBtn2").addEventListener("click", function () {
+  return updateProductQuantity("product1", 1);
+});
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
