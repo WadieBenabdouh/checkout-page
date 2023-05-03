@@ -1,1 +1,213 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin referrerpolicy="no-referrer"><link rel="stylesheet" href="/main.6f7ea105.css"><title>Checkout Page</title></head><body> <header> <h1 style="color:#4e5150;">Checkout</h1> </header> <div class="cart"> <div class="product product-one"> <img class="item-img" src="/backpack.cf43cae4.png" alt="backpack">  <div class="item-info"> <div class="product-metadata"> <div class="name-price"> <h4>Vintage Backpack</h4> <div class="price"> <p>$24.44</p> <p><s>$36.99</s></p> </div> </div> </div> <div class="quantity"> <i id="decreaseBtn1" class="fa-minus fa-solid"></i> <p id="countoneLabel">1</p> <i id="increaseBtn1" class="fa-plus fa-solid"></i> </div> </div> </div>  <div class="product product-two"> <img class="item-img" src="/shoes.11398db6.png" alt="shoes">  <div class="item-info"> <div class="product-metadata"> <div class="name-price"> <h4>Levi Shoes</h4> <div class="price"> <p>$34.44</p> <p><s>$49.99</s></p> </div> </div> </div> <div class="quantity"> <i id="decreaseBtn2" class="fa-minus fa-solid"></i> <p id="counttwoLabel">1</p> <i id="increaseBtn2" class="fa-plus fa-solid"></i> </div> </div> </div>  <div class="payout"> <hr> <div class="shipping"> <h3>shipping</h3> <p>$0</p> </div> <hr> <div class="total"> <h3>Total</h3> <p>$0</p> </div> </div> </div> <form action="">  <h3>Contact information</h3> <div class="contact">  <div class="email"> <h5>E-mail</h5> <div class="email-field"> <i class="fa-envelope fa-solid"></i> <label for="email"> <input type="email" id="email" placeholder="Enter your email..."> </label> </div> </div>  <div class="phone"> <h5>Phone</h5> <div class="phone-field"> <i class="fa-phone fa-solid"></i> <label for="phone"> <input type="text" id="phone" placeholder="Enter your phone..."> </label> </div> </div> </div>  <h3>Shipping Address</h3> <div class="shipping-form">  <div class="name"> <h5>Full name</h5> <div class="name-field"> <i class="fa-contact-card fa-solid"></i> <label for="text"> <input type="text" id="text" placeholder="Wadie Ben"> </label> </div> </div>  <div class="address"> <h5>Address</h5> <div class="address-field"> <i class="fa-house fa-solid"></i> <label for="text"> <input type="text" id="text" placeholder="Your address..."> </label> </div> </div>  <div class="city"> <h5>City</h5> <div class="city-field"> <i class="fa-solid fa-tree-city"></i> <label for="text"> <input type="text" id="text" placeholder="Your city..."> </label> </div> </div>  <div class="country-postal-wrapper">  <div class="country"> <h5>Country</h5> <div class="country-field"> <i class="fa-flag fa-sharp fa-solid"></i> <h6 style="white-space:nowrap;">Your country</h6> <select name="country" id="country"> <option value="" disabled selected>Choose a country</option> <option value="1">Brasil</option> <option value="2">Russia</option> <option value="3">Belarus</option> <option value="4">Czech Republic</option> <option value="5">Switzerland</option> <option value="6">Morocco</option> </select>  </div> </div>  <div class="postal"> <h5>Postal Code</h5> <div class="postal-field"> <i class="fa-signs-post fa-solid"></i> <label for="text"> <input type="text" id="text" placeholder="Your postal code..."> </label> </div> </div> </div>  <div class="final">  <div class="save"> <label for="save-info"> <input type="checkbox" id="save-info"> </label> <p>Save this information for next time</p> </div>  <label class="submit-wrapper" for="continue"> <input type="submit" value="Continue" id="continue"> </label> </div> </div> </form> <script src="/main.cdd8ee80.js"></script> </body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!--  CDN END-->
+    <link rel="stylesheet" href="/main.77bb5cfd.css">
+    <title>Checkout Page</title>
+<script src="/main.77bb5cfd.js"></script></head>
+
+<body>
+    <header>
+        <h1 style="color: #4E5150;">Checkout</h1>
+    </header>
+
+    <div class="cart">
+        <div class="product product-one">
+            <img class="item-img" src="/backpack.96482fdb.png" alt="backpack">
+            <!-- Name - Price - item count -->
+            <div class="item-info">
+                <div class="product-metadata">
+                    <div class="name-price">
+                        <h4>Vintage Backpack</h4>
+                        <div class="price">
+                            <p>$24.44</p>
+                            <p><s>$36.99</s></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quantity">
+                    <i id="decreaseBtn1" class="fa-solid fa-minus"></i>
+                    <p id="countoneLabel">1</p>
+                    <i id="increaseBtn1" class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <!-- ITEM 2 -->
+        <div class="product product-two">
+            <img class="item-img" src="/shoes.6a58b1da.png" alt="shoes">
+            <!-- Name - Price - item count -->
+            <div class="item-info">
+                <div class="product-metadata">
+                    <div class="name-price">
+                        <h4>Levi Shoes</h4>
+                        <div class="price">
+                            <p>$34.44</p>
+                            <p><s>$49.99</s></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quantity">
+                    <i id="decreaseBtn2" class="fa-solid fa-minus"></i>
+                    <p id="counttwoLabel">1</p>
+                    <i id="increaseBtn2" class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <!-- TOTAL NET PRICE -->
+        <div class="payout">
+            <hr>
+            <div class="shipping">
+                <h3>shipping</h3>
+                <p>$0</p>
+            </div>
+            <hr>
+            <div class="total">
+                <h3>Total</h3>
+                <p>$0</p>
+            </div>
+        </div>
+    </div>
+
+    <form action="">
+
+        <!-- ||Contact Information|| -->
+        <h3>Contact information</h3>
+        <div class="contact">
+            <!-- Email -->
+            <div class="email">
+                <h5>E-mail</h5>
+
+                <div class="email-field">
+                    <i class="fa-solid fa-envelope"></i>
+                    <label for="email">
+                        <input type="email" id="email" placeholder="Enter your email...">
+                    </label>
+                </div>
+            </div>
+
+            <!-- PHONE -->
+            <div class="phone">
+                <h5>Phone</h5>
+
+                <div class="phone-field">
+                    <i class="fa-solid fa-phone"></i>
+                    <label for="phone">
+                        <input type="text" id="phone" placeholder="Enter your phone...">
+                    </label>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ||Shipping address|| -->
+        <h3>Shipping Address</h3>
+        <div class="shipping-form">
+
+            <!-- Full Name -->
+            <div class="name">
+                <h5>Full name</h5>
+
+                <div class="name-field">
+                    <i class="fa-solid fa-contact-card"></i>
+                    <label for="text">
+                        <input type="text" id="text" placeholder="Your name...">
+                    </label>
+                </div>
+            </div>
+
+            <!-- Address Line -->
+            <div class="address">
+                <h5>Address</h5>
+
+                <div class="address-field">
+                    <i class="fa-solid fa-house"></i>
+                    <label for="text">
+                        <input type="text" id="text" placeholder="Your address...">
+                    </label>
+                </div>
+            </div>
+
+            <!-- City -->
+            <div class="city">
+                <h5>City</h5>
+
+                <div class="city-field">
+                    <i class="fa-solid fa-tree-city"></i>
+                    <label for="text">
+                        <input type="text" id="text" placeholder="Your city...">
+                    </label>
+                </div>
+            </div>
+
+            <!-- COUNTRY - POSTAL 2 columns  -->
+            <div class="country-postal-wrapper">
+
+                <!-- Country -->
+                <div class="country">
+                    <h5>Country</h5>
+
+                    <div class="country-field">
+                        <i class="fa-sharp fa-solid fa-flag"></i>
+                        <h6 style="white-space: nowrap;">Your country</h6>
+                        <select name="country" id="country">
+                            <option value="" disabled="" selected="selected">Choose a country</option>
+                            <option value="1">Brasil</option>
+                            <option value="2">Russia</option>
+                            <option value="3">Belarus</option>
+                            <option value="4">Czech Republic</option>
+                            <option value="5">Switzerland</option>
+                            <option value="6">Morocco</option>
+                        </select>
+                        
+                    </div>
+                </div>
+
+                <!-- Postal Code -->
+                <div class="postal">
+                    <h5>Postal Code</h5>
+
+                    <div class="postal-field">
+                        <i class="fa-solid fa-signs-post"></i>
+                        <label for="text">
+                            <input type="text" id="text" placeholder="Your postal code...">
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Final -->
+
+            <div class="final">
+                <!-- checkbox -->
+                <div class="save">
+                    <label for="save-info">
+                        <input type="checkbox" id="save-info">
+                    </label>
+                    <p>Save this information for next time</p>
+                </div>
+                <!-- submit btn -->
+                <label class="submit-wrapper" for="continue">
+                    <input type="submit" value="Continue" id="continue">
+                </label>
+
+            </div>
+
+        </div>
+
+
+
+    </form>
+
+    <script src="/main.1f19ae8e.js"></script>
+
+</body>
+
+</html>
